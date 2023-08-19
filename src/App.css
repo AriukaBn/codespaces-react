@@ -1,31 +1,275 @@
-.App {
-  text-align: center;
+#main {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(29, 93, 155);
+}
+.headerSticky {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(29, 93, 155);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.categ {
+  width: 300px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Sags {
+  margin: 10px 30px;
+  height: 40px;
+  width: 60px;
+}
+.header li a {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 40px;
+}
+.header li {
+  list-style: none;
+}
+.Baraa{
+  height: 430px;
+  width: 249px;
+  margin: 10px 10px;
+  border: 0.5px solid rgb(196, 196, 196);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+.Baraa div {
+  margin-top: 15px;
+}
+.Baraa div h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.Baraa div p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.Baraa button {
+  margin-bottom: 20px;
+}
+.niit {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nii {
+  /*width: 1603px;*/
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  height: 180px;
+  width: 180px;
+}
+
+.popup {
+  background-color: rgb(244, 209, 96);
+  height: 500px;
+  width: 750px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+}
+.popup li {
+  list-style: none;
+  width: 0px;
+  border: 0.5px dotted black;
+}
+.popup1 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.m {
+  margin-left: 5px;
+  height: 500px;
+  width: 350px;
+}
+.m p {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.m h4 {
+  font-size: 25px;
+  margin-top: 5px;
+}
+.n {
+  height: 500px;
+  width: 375px;
+
+  display: flex;
+  justify-content: center;
+}
+.n img {
+  margin-top: 20px;
+}
+.close-btn {
+  height: 29.33px;
+  width: 29.33px;
+  border: none;
+  border-radius: 14.665px;
+  cursor: pointer;
+}
+.id {
   color: white;
 }
+.adasd li {
+  list-style: none;
+  margin: 10px 10px;
+  height: 20px;
+}
+.adasd button {
+  color: black;
+  border: none;
+  font-size: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+.adasd {
+  display: flex;
+  flex-direction: column;
 
-.App-link {
-  color: #61dafb;
+}
+#SagsMenu {
+  position: absolute;
+  width: 100vw;
+}
+.closeBtn {
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  height: 29.33px;
+  width: 29.33px;
+  border: none;
+  border-radius: 14.665px;
+  cursor: pointer;
+}
+.Product img {
+  height: 100px;
+  width: 100px;
+  margin-right: 25px;
+  margin-left: 50px;
+}
+.Product {
+  margin-left: 50px;
+  background: linear-gradient(90deg, rgba(244,210,98,1) 0%, rgba(251,238,172,1) 50%, rgba(117,194,246,1) 100%);
+  border: 1px solid black;
+  width: 700px;
+  height: 150px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+}
+.Product button {
+  height: 50px;
+}
+.Product h3 {
+  margin: 50px 30px;
+  height: auto;
+  width: 280px;
+}
+.Product p {
+  margin: 20px 20px;
+  width: 56px;
+}
+.SagsandHiih {
+  margin-bottom: 20px;
+}
+.a2 {
+  display: flex;
+  flex-direction: column;
 }
 
-.heart {
-  color: #ff0000;
-}
+@media (max-width: 600px) {
+  .Product img {
+    height: 100px;
+    width: 100px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .Product {
+    margin-left: 10px;
+    width: 95vw;
+    height: 150px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .Product button {
+    height: 50px;
+    margin-right: 0px;
+  }
+  .Product h3 {
+    margin: 0px 0px;
+    height: 100px;
+    width: 100px;
+    overflow: auto;
+  }
+  .Product p {
+    margin: 5px 20px;
+    width: 56px;
+  }
 
-.small {
-  font-size: 0.75rem;
+  .Baraa{
+    height: 300px;
+    width: 20vh;
+    margin: 10px 10px;
+    border: 0.5px solid rgb(196, 196, 196);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Baraa div {
+    margin-top: 0px;
+  }
+  .Baraa div h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 58.8px;
+    overflow: auto;
+  }
+  img {
+    height: 150px;
+    width: 150px;
+  }
+  .a2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .popup {
+    width: 45vh;
+  }
 }
